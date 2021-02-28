@@ -1,0 +1,18 @@
+DROP TABLE IF EXISTS `posts`, `comments`;
+
+CREATE TABLE `posts` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `userId` INT UNSIGNED NOT NULL,
+  `title` VARCHAR(255) NOT NULL,
+   `body` TEXT NOT NULL,
+   PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `comments` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `postId` INT UNSIGNED NOT NULL,
+  `name` VARCHAR(255) NOT NULL,
+  `email` VARCHAR(255) NOT NULL,
+  `body` TEXT NOT NULL,
+  PRIMARY KEY (`id`)
+);
