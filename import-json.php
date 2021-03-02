@@ -14,12 +14,8 @@ $countPosts = $import_posts->importArr($request_posts, $db);
 $import_comments = New ImportComments();
 $countComments = $import_comments->importArr($request_comments, $db);
 
-// echo '<br>Загружено '.$countComments.' комментариев';
 echo '<br>Загружено '.$countPosts.' записей и '.$countComments.' комментариев';
 
 $db->connect->close();
 
-// echo '<pre>';
-// var_dump($request_comments->dataResponse);
-// echo '</pre>';
 ?>

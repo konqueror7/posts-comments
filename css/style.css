@@ -1,0 +1,12 @@
+main {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search_form {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+}
