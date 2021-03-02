@@ -33,7 +33,7 @@ searchForm.addEventListener('submit', (event) => {
   event.preventDefault()
   const searcFormData = new FormData(searchForm)
   createRequest({
-    url: 'http://glavpunkt.localhost/search.php',
+    url: '/search.php',
     data: searcFormData,
     callback: (err, response) => {
       if (response && response.success === true) {
