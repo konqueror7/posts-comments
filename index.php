@@ -25,6 +25,6 @@ require 'autoload.php';
         </div>
       </div>
     </main>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
   </body>
 </html>
